@@ -35,7 +35,8 @@ The system is deployed live on Streamlit Cloud, simulating real-time secure API 
 * **Data Leakage Mitigation:** Synthetic Minority Over-sampling Technique (**SMOTE**) was applied **strictly after** executing the train-test split array to prevent data contamination.
 * **Cost-Sensitive Optimization:** Tuned the algorithmic optimization parameter within the gradient booster to penalize minority misclassifications:
 
-$$\text{scale\_pos\_weight} = \frac{\text{Negative Counts}}{\text{Positive Counts}} = \frac{284,315}{492} = 577$$
+``text
+scale_pos_weight = Negative Counts / Positive Counts = 284,315 / 492 = 577
 
 * **Evaluation Benchmark:** Replaced standard ROC-AUC targets with Precision-Recall AUC (**PR-AUC**) to effectively penalize False Negatives under extreme imbalance constraints.
 
