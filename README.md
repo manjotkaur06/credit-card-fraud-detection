@@ -1,7 +1,7 @@
 # 💳 Enterprise Credit Card Fraud Detection Shield
 ### *Real-Time Transaction Integrity Analytics Layer powered by XGBoost*
 
-[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://manjotkaur06-credit-card-fraud-detection.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://share.streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 
@@ -20,7 +20,7 @@ In high-volume digital transaction ecosystems processing millions of events dail
 
 ## 🚀 Live Interactive Simulator
 The system is deployed live on Streamlit Cloud, simulating real-time secure API network token ingestion:  
-🔗 **Live Application Link:** [https://manjotkaur06-credit-card-fraud-detection.streamlit.app/](https://manjotkaur06-credit-card-fraud-detection.streamlit.app/)
+🔗 **Live Application Link:** [https://manjotkaur06-credit-card-fraud-detection.streamlit.app/](https://credit-card-fraud-detection-uytpykxj6jry9ea6qkagws.streamlit.app/)
 
 ---
 
