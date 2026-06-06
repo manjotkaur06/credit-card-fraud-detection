@@ -1,9 +1,6 @@
-venv/
 .venv/
-__pycache__/
+venv/
 .ipynb_checkpoints/
-
+__pycache__/
 *.pyc
-*.pkl
-*.npy
-*.csv
+data/raw/creditcard.csv
