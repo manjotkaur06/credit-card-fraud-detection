@@ -10,16 +10,21 @@ st.title("💳 Enterprise Credit Card Fraud Detection Shield")
 st.write("Real-Time Transaction Integrity Analytics Layer powered by XGBoost")
 st.write("---")
 
-# Safe Paths Mapping according to image_fe87af.png structure
-# Jab cloud par run hoga toh root directory se models directly read honge
-MODEL_PATH = "models/xgb_model.pkl"
-SCALER_PATH = "models/scaler.pkl"
+# Absolute path tracking dynamic fix
+# Yeh code automatic check karega ki script kahan se run ho rahi hai aur sahi path pakad lega
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "models", "xgb_model.pkl")
+SCALER_PATH = os.path.join(BASE_DIR, "models", "scaler.pkl")
 
 @st.cache_resource
 def load_production_assets():
     if not os.path.exists(MODEL_PATH) or not os.path.exists(SCALER_PATH):
-        # Fallback tracking agar relative structures parent call se change hon
-        return pickle.load(open("../models/xgb_model.pkl", "rb")), pickle.load(open("../models/scaler.pkl", "rb"))
+        # Ek aur fallback agar directly root se execution ho rahi ho
+        local_model = "models/xgb_model.pkl"
+        local_scaler = "models/scaler.pkl"
+        if os.path.exists(local_model) and os.path.exists(local_scaler):
+            return pickle.load(open(local_model, "rb")), pickle.load(open(local_scaler, "rb"))
+        raise FileNotFoundError(f"Models not found at absolute or relative structures. Checked: {MODEL_PATH}")
     
     return pickle.load(open(MODEL_PATH, "rb")), pickle.load(open(SCALER_PATH, "rb"))
 
