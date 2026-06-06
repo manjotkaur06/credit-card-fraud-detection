@@ -1,7 +1,7 @@
 # 💳 Enterprise Credit Card Fraud Detection Shield
 ### *Real-Time Transaction Integrity Analytics Layer powered by XGBoost*
 
-[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://credit-card-fraud-detection-uytpykxj6jry9ea6qkagws.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badge_svg.svg)](https://manjotkaur06-credit-card-fraud-detection.streamlit.app/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
 
@@ -19,8 +19,9 @@ In high-volume digital transaction ecosystems processing millions of events dail
 ---
 
 ## 🚀 Live Interactive Simulator
-The system is deployed live on Streamlit Cloud, simulating real-time secure API network token ingestion:
-🔗 **Live Application Link:** [https://manjotkaur06-credit-card-fraud-detection.streamlit.app/](https://credit-card-fraud-detection-uytpykxj6jry9ea6qkagws.streamlit.app/)
+The system is deployed live on Streamlit Cloud, simulating real-time secure API network token ingestion:  
+🔗 **Live Application Link:** [https://manjotkaur06-credit-card-fraud-detection.streamlit.app/](https://manjotkaur06-credit-card-fraud-detection.streamlit.app/)
+
 ---
 
 ## ⚡ Engineering & Machine Learning Roadmap
@@ -33,7 +34,9 @@ The system is deployed live on Streamlit Cloud, simulating real-time secure API 
 ### 2. Imbalance Resolution Protocols
 * **Data Leakage Mitigation:** Synthetic Minority Over-sampling Technique (**SMOTE**) was applied **strictly after** executing the train-test split array to prevent data contamination.
 * **Cost-Sensitive Optimization:** Tuned the algorithmic optimization parameter within the gradient booster to penalize minority misclassifications:
+
 $$\text{scale\_pos\_weight} = \frac{\text{Negative Counts}}{\text{Positive Counts}} = \frac{284,315}{492} = 577$$
+
 * **Evaluation Benchmark:** Replaced standard ROC-AUC targets with Precision-Recall AUC (**PR-AUC**) to effectively penalize False Negatives under extreme imbalance constraints.
 
 ---
